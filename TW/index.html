@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="ro" id="top">
+
+<head>
+<meta charset="utf-8">
+<title>Blue Velvet Couture</title>
+
+<meta name="author" content="Citu Ana Claudia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Blue Velvet Couture este un magazin online cu ultimele colecții de haine care sunt în tendințe.">
+<meta name="keywords" content="moda, fashion, haine, rochii, colectii, stil, Blue Velvet Couture, magazin haine">
+
+<link rel="icon" type="image/png" href="./resurse/imagini/favicon/dress-ico.png">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+
+
+body{
+--c1:#1b1f3b;
+--c2:#4a4e69;
+--c3:#9a8c98;
+--c4:#c9ada7;
+--c5:#f2e9e4;
+
+font-family:Arial, sans-serif;
+background:var(--c5);
+color:var(--c1);
+margin:0;
+}
+
+
+header{
+background:var(--c2);
+color:white;
+padding:20px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+padding:0;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+
+#grid-pagina{
+display:grid;
+gap:20px;
+padding:20px;
+}
+
+
+
+.table-container{
+overflow-x:auto;
+}
+
+table{
+border-collapse:collapse;
+width:100%;
+}
+
+caption{
+caption-side:bottom;
+padding:10px;
+}
+
+thead th{
+border:3px solid var(--c1);
+}
+
+td,th{
+border:1px solid var(--c3);
+padding:10px;
+}
+
+tbody tr:nth-child(even){
+box-shadow:0px 2px 5px var(--c4);
+}
+
+tbody tr:nth-child(odd){
+box-shadow:0px 2px 5px var(--c3);
+}
+
+tbody tr:hover{
+background:var(--c4);
+font-size:120%;
+transition:0.75s;
+}
+
+
+.backtop{
+position:fixed;
+bottom:20px;
+right:20px;
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--c2);
+color:white;
+border-radius:50%;
+text-decoration:none;
+opacity:0.5;
+box-shadow:0 0 10px var(--c3);
+font-size:20px;
+}
+
+.backtop:hover{
+opacity:1;
+background:var(--c1);
+}
+
+.backtop::after{
+content:"Înapoi sus";
+position:absolute;
+bottom:60px;
+background:var(--c1);
+color:white;
+padding:5px 10px;
+font-size:12px;
+display:none;
+}
+
+.backtop:hover::after{
+display:block;
+}
+
+
+
+@media (min-width:900px){
+
+#grid-pagina{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Blue Velvet Couture</h1>
+
+<img src="./resurse/imagini/favicon/dress-ico.png" alt="sigla">
+
+<nav>
+<ul>
+<li><a href="#welcome">Acasă</a></li>
+<li><a href="#categorii">Categorii</a></li>
+<li><a href="#recomandate">Produse</a></li>
+<li><a href="#newsletter">Newsletter</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<form>
+<label for="search">Caută produse:</label>
+<input type="search" id="search" placeholder="rochii, jachete, accesorii">
+<button type="submit">Caută</button>
+</form>
+
+<div>
+<a href="#">1 Wishlist</a>
+<a href="#">2 Coș</a>
+<a href="#">3 Contul meu</a>
+</div>
+
+</header>
+
+<main>
+
+<div id="grid-pagina">
+
+<section id="welcome">
+
+<hgroup>
+<h2>Bine ați venit la Blue Velvet Couture</h2>
+<p class="subtitlu">Descoperă cele mai noi colecții de modă</p>
+</hgroup>
+
+<p>
+Vă mulțumim că vizitați magazinul nostru online.
+</p>
+
+<img src="./resurse/imagini/rochie1.png" alt="rochie">
+
+</section>
+
+<section id="categorii">
+
+<h2>Categorii produse</h2>
+
+<ul>
+<li><a href="#">Rochii</a></li>
+<li><a href="#">Jachete</a></li>
+<li><a href="#">Pantofi</a></li>
+<li><a href="#">Accesorii</a></li>
+<li><a href="#">Genți</a></li>
+</ul>
+
+</section>
+
+<section id="recomandate">
+
+<h2>Produse recomandate</h2>
+
+<article>
+
+<h3>Rochie Velvet</h3>
+
+<figure>
+<img src="resurse/imagini/rochie1.png" width="200">
+<figcaption>Rochie elegantă</figcaption>
+</figure>
+
+<p>Preț: 299 RON</p>
+
+<button>Adaugă în coș</button>
+
+</article>
+
+</section>
+
+<section id="review">
+
+<h2>Review-uri clienți</h2>
+
+<blockquote>
+„Produse foarte elegante și de calitate.”
+</blockquote>
+
+<blockquote>
+„Livrarea a fost rapidă și hainele sunt superbe.”
+</blockquote>
+
+</section>
+
+<section id="produse">
+
+<h2>Produsele noastre</h2>
+
+<dl>
+<dt>Haute Couture</dt>
+<dd>Îmbrăcăminte realizată manual, cu materiale premium.</dd>
+</dl>
+
+</section>
+
+<section>
+
+<h2>Cele mai populare articole</h2>
+
+<div class="table-container">
+
+<table>
+
+<caption>Top articole Blue Velvet Couture</caption>
+
+<thead>
+<tr>
+<th>Cod</th>
+<th>Produs</th>
+<th>Sezon</th>
+<th>Popularitate</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>101</td>
+<td>Rochie elegantă</td>
+<td rowspan="2">Primăvară</td>
+<td>Foarte popular</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Jachetă</td>
+<td>Popular</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Pantofi</td>
+<td>Vară</td>
+<td>Foarte popular</td>
+</tr>
+
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="4">Date bazate pe preferințele clienților</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+
+</section>
+
+<section id="newsletter">
+
+<h2>Abonează-te la newsletter</h2>
+
+<form>
+
+<label>Email:</label>
+
+<input type="email" placeholder="emailul tău">
+
+<button>Abonează-te</button>
+
+</form>
+
+</section>
+
+</div>
+
+</main>
+
+<footer id="contact">
+
+<p>
+Telefon:
+<a href="tel:0790505018">0790505018</a>
+</p>
+
+<p>
+Email:
+<a href="mailto:contact@bluevelvetcouture.ro">
+contact@bluevelvetcouture.ro
+</a>
+</p>
+
+</footer>
+
+<a href="#top" class="backtop">&#9651;</a>
+
+</body>
+</html>
