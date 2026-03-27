@@ -14,6 +14,9 @@
 
 <link rel="icon" type="image/png" href="./resurse/imagini/favicon/dress-ico.png">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style-menu.css">
+
 <style>
 
 html{
@@ -162,13 +165,43 @@ grid-template-columns:1fr 1fr;
 <img src="./resurse/imagini/favicon/dress-ico.png" alt="sigla">
 
 <nav>
-<ul>
-<li><a href="#welcome">Acasă</a></li>
-<li><a href="#categorii">Categorii</a></li>
-<li><a href="#recomandate">Produse</a></li>
-<li><a href="#newsletter">Newsletter</a></li>
-<li><a href="#contact">Contact</a></li>
+<ul class="meniu">
+
+<li>
+<a href="#welcome"><i class="fa-solid fa-house"></i> Acasă</a>
+</li>
+
+<li class="has-submenu">
+<a href="#"><i class="fa-solid fa-shirt"></i> Produse</a>
+
+<ul class="submenu">
+<li><a href="#">Rochii</a></li>
+<li><a href="#">Jachete</a></li>
+<li><a href="#">Pantofi</a></li>
 </ul>
+
+</li>
+
+<li class="has-submenu">
+<a href="#"><i class="fa-solid fa-images"></i> Pagini</a>
+
+<ul class="submenu">
+<li><a href="#welcome">Welcome</a></li>
+<li><a href="#categorii">Categorii</a></li>
+<li><a href="#newsletter">Newsletter</a></li>
+</ul>
+
+</li>
+
+<li>
+<a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+</li>
+
+</ul>
+
+<div class="burger">
+<i class="fa-solid fa-bars"></i>
+</div>
 </nav>
 
 <form>
@@ -356,6 +389,8 @@ contact@bluevelvetcouture.ro
 </footer>
 
 <a href="#top" class="backtop">&#9651;</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
